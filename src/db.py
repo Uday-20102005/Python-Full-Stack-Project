@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY")  # use service key for inserts/updates
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")  # use service key for inserts/updates
 
 if not SUPABASE_URL or not SUPABASE_KEY:
     raise ValueError("Supabase URL or KEY missing in .env")
